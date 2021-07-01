@@ -1,0 +1,25 @@
+.home-area {
+    padding-top: 18vh;
+    color: #fff;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+.home-area .mobile-image {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: -158px;
+}
+.btn {
+    padding: 12px 30px;
+}
+@media only screen and (max-width: 767px) {
+    .home-area {
+        padding-top: 120px;
+        padding-bottom: 100px;
+        margin-bottom: 0;
+    }
+    .hidden-sm {
+        display: none!important;
+    }
+}
