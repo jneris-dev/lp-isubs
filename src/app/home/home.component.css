@@ -1,3 +1,6 @@
+section:not(.bg-dark) p {
+    color: var(--bs-secondary);
+}
 .home-area {
     padding-top: 18vh;
     color: #fff;
@@ -13,6 +16,68 @@
 .btn {
     padding: 12px 30px;
 }
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.page-title .title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--bs-danger);
+    font-weight: 600;
+    font-size: 14px;
+}
+.text-center.page-title .title:before, .page-title .title:after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    background-color: #e1e1e1;
+    margin: 0 15px;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+.box-logo {
+    width: 56px;
+    height: 56px;
+}
+.box-logo img {
+    filter: brightness(0) invert(1);
+}
+.progress-area {
+    background-image: url('https://preview.colorlib.com/theme/appy/images/xprogress-bg.jpg.pagespeed.ic.2xJ544g7IU.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.box-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.progress-area .mobile-image {
+    margin-top: -90px;
+    margin-bottom: -153px;
+}
+.accordion-item {
+    background-color: #171a1d;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-danger);
+    box-shadow: none;
+}
+.accordion-button::after {
+    background: none;
+}
 @media only screen and (max-width: 767px) {
     .home-area {
         padding-top: 120px;
@@ -21,5 +86,16 @@
     }
     .hidden-sm {
         display: none!important;
+    }
+    .section-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .progress-area {
+        background-image: none;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 }

@@ -1,7 +1,7 @@
 <header class="w-100 h-auto position-fixed bg-light py-3">
-    <nav class="navbar navbar-expand-md navbar-light py-0">
+    <nav class="navbar navbar-expand-sm navbar-light py-0">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <img src="../../assets/logo.svg" class="img-fluid" width="44" />
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -10,25 +10,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link fw-bold px-3" href="./">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link fw-bold px-3" routerLink="./" fragment="about"
+                            [class.active]="(activeFragment | async) === 'about'" (click)="onClick('about')">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link fw-bold px-3" routerLink="./" fragment="features"
+                            [class.active]="(activeFragment | async) === 'features'"
+                            (click)="onClick('features')">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link fw-bold px-3" routerLink="./" fragment="faq"
+                            [class.active]="(activeFragment | async) === 'faq'" (click)="onClick('faq')">FAQ</a>
                     </li>
                 </ul>
-                <button class="btn btn-danger">Download App</button>
+                <button class="btn btn-danger d-sm-inline d-none">Download App</button>
             </div>
         </div>
     </nav>

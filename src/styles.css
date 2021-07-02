@@ -1,9 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     width: 100%;
     height: auto;
     position: relative;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Jost', sans-serif;
+}
+a:link, a:hover, a:active, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+.btn:focus, button:focus, .navbar-toggler:focus, .navbar-toggler:hover, input:focus, textarea, select, video {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    outline: none;
+    text-decoration: none;
 }
